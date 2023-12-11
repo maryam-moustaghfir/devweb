@@ -1,0 +1,249 @@
+.bouton
+{
+background-color:#fff;
+height:34px;
+border-bottom:2px solid #092435;
+padding:3px 10px 3px 10px;
+margin:3px 10px 3px 10px;
+font-family:mist;
+font-weight:normal;
+font-size:26px;
+color:#092435;
+font-family: Tytoon Mist;
+}
+.bouton:hover
+{
+background-color:#092435;
+border-bottom:2px solid #fff;
+color:#fff;
+}
+/*---------------------------------------------{Fonts}--------------------------------------------------------*/
+/* Définition de la police Tytoon Mist */
+@font-face 
+{
+    font-family: 'Tytoon Mist';
+    src: url('./font/tytoon_mist.ttf') format('truetype');
+}
+  
+  /* Définition de la police Zorque */
+@font-face 
+{
+    font-family: 'Zorque';
+    src: url('./font/zorque.otf') format('opentype');
+}
+  
+  /* Définition de la police Calibri */
+@font-face 
+{
+    font-family: 'Calibri';
+    src: url('./font/calibri.ttf') format('truetype');
+}
+.maPage
+{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titre
+{
+    height: 175px;
+    width: 70%;
+    font-family: Zorque;
+    font-size: 60px;
+    float: left; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre img
+{
+   width: 170px; 
+} 
+.authentification
+{
+    height: 175px;
+    width: 30%;
+    float: left;   
+}
+
+.authBloc 
+{
+    background-color: #4494cb;
+    font-family: 'Calibri';
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.authBloc label 
+{
+    margin-right: 10px; 
+}
+.authBloc input
+{
+    margin-right: 10px; 
+}
+.bouttons
+{
+    float: right;
+}
+.contenu
+{
+    height: 500px;
+    width: 70%;
+    float: left;
+    clear: both;
+}
+/* Conteneur des images */
+.articles-container /*conteneur des articles */
+{
+    max-height: 500px; 
+    overflow-y:scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 4px;
+}
+.forme-container /*moustatil*/
+{
+    width: 48%;
+    height: 190px;
+    background: linear-gradient(#FFF, #d8d8d8);
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ajoutez un espace entre les lignes */
+    margin-right: 15px;
+}
+.forme-container img
+{
+    width: 110px;
+    height: 175px;
+    float: left;
+    margin-top: 10px;
+}
+.forme-container h1
+{
+    margin-left: 120px;
+    margin-top: 30px;
+    font-family: 'Zorque';
+    font-size: 21px;
+
+}
+.forme-container h3
+{
+    margin-top:-10px;
+    color: #4494cb;
+    margin-left: 120px;
+    font-family: 'calibri'; 
+    font-size:15px ;
+}
+.forme-container p
+{
+    font-family: 'Zorque', sans-serif; 
+    color: #4494cb;
+    margin-left:120px ;
+
+}
+.forme-container button
+{
+    margin-top: -2px;
+}
+.panier
+{
+    height: 500px;
+    width: 30%;
+    float: left;
+    font-family: 'Calibri';    
+    
+
+}
+.panier img
+{
+    width: 60px;
+    float: left;
+}
+.panier-container
+{
+    background: linear-gradient(#FFF, #d8d8d8);
+    box-sizing: border-box;
+    border: 2px solid black; 
+    height: 130px;
+
+}
+.titrepanier
+{
+    border : 1.5px solid #d8d8d8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titrepanier h3
+{
+    color: #092435;
+    letter-spacing: 4px; 
+      
+}
+
+
+body
+{
+    background-image: url('./img_site/fond-wide-1200px.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;         
+}
+
+
+
+/*Ecran Smartphone*/
+@media screen and (max-width: 750px) 
+{
+    .titre
+    {
+        width: 100%;
+        font-size: 40px;
+    }
+    .titre img
+    {
+        width: 100px;
+    }
+    .authentification
+    {
+        width: 100%;
+    }
+    .authBloc
+    {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenu
+    {
+        width: 100%;
+    }
+    .panier
+    {
+        width: 100%;
+    }
+    
+}
+
+/*la barre de défilement*/
+::-webkit-scrollbar 
+{
+    width: 8px;
+} 
+::-webkit-scrollbar-thumb 
+{
+    background-color: #e9e6e6;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track 
+{
+    background-color: #000000;
+}
