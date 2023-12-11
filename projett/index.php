@@ -43,31 +43,32 @@ $connexion = connexion();
 
         try {
             // Récupération de l'ID de la catégorie depuis l'URL
-            $categorie_id = isset($_GET['famille']) ? intval($_GET['famille']) : 0;
+            $db = new mysqli('localhost', 'jeux-videos', 'IsImA_2023/%', 'jeux-videos', 3307);
+    $db->query('SET NAMES UTF8');
 
-            // Appel d'une fonction pour obtenir tous les articles de la catégorie
-            $articles = obtenirArticlesCategorie($connexion, $categorie_id);
+    // 2. on exécute la requête
+    $sql = 'SELECT id, libelle, image, ordre_affichage FROM categorie';
+    $result = $db->query($sql);
 
-            // Vérifie si des articles ont été trouvés
-            if ($articles) {
-                echo '<div class="articles-container">';
-                // Affiche chaque article
-                foreach ($articles as $article) {
-                    echo '<div class="forme-container">';
+    // Vérifie si la requête s'est bien exécutée
+    if ($result === false) {
+        throw new Exception($db->error);
+    }
 
-                    echo '<h1 class="libelle">' . $article['libelle'] . '</h1>';
-                    echo '<div class="detail">' . $article['detail'] .'...'. '</div>';
-                    echo '<p class="style-prix">' . $article['prix_ttc'] . ' €</p>';
-                    $imagePath = 'img_articles/' . $article['image'];
-                    echo '<img src="' . $imagePath . '" alt="Image de l\'article" class="img-article">';
-                    echo '<button class="bouton">'.'commander'.'</button>';
-                    echo '</div>';
-                }
-                echo '</div>'; // Fermez le conteneur de l'article
+    // 3. on fait une boucle pour lire chaque enregistrement
+    // Boucle pour afficher les cercles
+    while ($data = $result->fetch_assoc()) {
+        echo '<div class="ligne">'; // Début d'une ligne
 
-            } else {
-                echo 'Aucun article trouvé dans cette catégorie.';
-            }
+        // Affiche les données de chaque enregistrement
+        echo '<div class="cercle">';
+        echo 'Jeux de ' . $data['libelle'];
+        $imagePath = 'img_categories/' . $data['image'];
+        echo '<img src="' . $imagePath . '" alt="Image de l\'article" class="img-categorie">';
+        echo '</div>';
+
+        echo '</div>'; // Fin de la ligne
+    }
         } catch (Exception $e) {
             // Gère les exceptions, affiche l'erreur ou effectue d'autres actions nécessaires
             echo 'Erreur : ' . $e->getMessage();
