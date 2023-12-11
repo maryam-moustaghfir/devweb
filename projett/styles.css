@@ -171,20 +171,42 @@ body
 }
 
 .img-categorie{
-    width:50px;
-    height: 50px;
+    width:100px;
+    height: 100px;
+    margin-top:20px;
 }
 
-.ligne {
+
+.ligne-flex {
     display: flex;
+    justify-content: space-between;
+}
+.ligne-flex-center .cercle {
+    margin: 0 90px; /* Ajustez la marge entre les cercles selon vos besoins */
+    margin-top:10px;
+}
+/* Style pour le conteneur de la deuxième ligne */
+.ligne-flex-center {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
 }
 .cercle {
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
     background-color: #3498db;
     border: 2px solid #000;
     border-radius: 50%;
     margin: 10px; /* Espacement entre les cercles */
+    text-align: center;
+
+}
+
+.style-categorie {
+    margin-top: 15px; /* Ajustez la distance du texte par rapport au bas du cercle */
+    width: 100%;
+    text-align: center;
+    font-family: Zorque;
 }
 
 /* Boîte de jeu individuelle */
