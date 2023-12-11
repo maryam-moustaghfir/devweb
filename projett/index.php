@@ -57,18 +57,32 @@ $connexion = connexion();
 
     // 3. on fait une boucle pour lire chaque enregistrement
     // Boucle pour afficher les cercles
-    while ($data = $result->fetch_assoc()) {
-        echo '<div class="ligne">'; // Début d'une ligne
+    $count = 0; // Compteur pour suivre le nombre de cercles
+    echo '<div class="ligne-flex">'; // Début du premier conteneur flexible
 
+    while ($data = $result->fetch_assoc()) {
         // Affiche les données de chaque enregistrement
         echo '<div class="cercle">';
-        echo 'Jeux de ' . $data['libelle'];
+
         $imagePath = 'img_categories/' . $data['image'];
         echo '<img src="' . $imagePath . '" alt="Image de l\'article" class="img-categorie">';
+        echo '<div class="style-categorie">'.'Jeux de ' . $data['libelle'].'</div>';
+
         echo '</div>';
 
-        echo '</div>'; // Fin de la ligne
+        $count++;
+
+        // Si nous avons affiché trois cercles, fermons le premier conteneur flexible et ouvrons le deuxième
+        if ($count === 3) {
+            echo '</div>'; // Fin du premier conteneur flexible
+            echo '<div class="ligne-flex-center">'; // Début du deuxième conteneur flexible
+        }
     }
+
+    echo '</div>';
+
+    echo '</div>'; // Fin du dernier conteneur flexible
+
         } catch (Exception $e) {
             // Gère les exceptions, affiche l'erreur ou effectue d'autres actions nécessaires
             echo 'Erreur : ' . $e->getMessage();
