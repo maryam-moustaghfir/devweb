@@ -121,6 +121,90 @@ body
     clear: both;
     background-color: black;
 }
+/* Conteneur des images */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.img-article {
+    width: 120px;
+    height: 175px;
+    z-index: 1;
+    margin-top: -120px;
+    margin-left: 20px;
+}
+.style-prix{
+    font-family: 'Zorque', sans-serif; 
+    color: #4494cb;
+    margin-left:150px ;
+}
+.libelle {
+    font: normal normal normal 25px/1 'Zorque';
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+
+.detail {
+    margin-top:-3px;
+    color: #4494cb;
+    margin-left: 150px;
+    font-family: 'calibri'; 
+
+}
+.forme-container {
+    width: 48%;
+    height: 190px;
+    background: linear-gradient(#FFF, #d8d8d8);
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ajoutez un espace entre les lignes */
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Boîte de jeu individuelle */
+/*.jeu-box {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    border-radius: 50% 0 0 50%;
+    background: linear-gradient(#FFF, #d8d8d8);
+    margin: 1em;
+    padding: 0.5em;
+    align-items: center;
+}
+
+.jeu-img {
+    max-width: 120px;
+    max-height: 150px;
+    margin-right: 20px;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.image-item h3 {
+    font-family: 'Zorque', sans-serif; 
+}
+
+.prix {
+    font-family: 'Zorque', sans-serif; 
+    color: #4494cb;
+}*/
+
+
 /*-----------------------------------------{Ecran Intermédiaire}------------------------------------------------*/
 @media only screen and (min-width: 750px) and (max-width: 1200px)
 {
