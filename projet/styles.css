@@ -1,0 +1,351 @@
+.bouton
+{
+background-color:#fff;
+height:34px;
+border-bottom:2px solid #092435;
+padding:3px 10px 3px 10px;
+margin:3px 10px 3px 10px;
+font-family:mist;
+font-weight:normal;
+font-size:26px;
+color:#092435;
+font-family: Tytoon Mist;
+}
+.bouton:hover
+{
+background-color:#092435;
+border-bottom:2px solid #fff;
+color:#fff;
+}
+/*---------------------------------------------{Fonts}--------------------------------------------------------*/
+/* Définition de la police Tytoon Mist */
+@font-face 
+{
+    font-family: 'Tytoon Mist';
+    src: url('./font/tytoon_mist.ttf') format('truetype');
+}
+  
+  /* Définition de la police Zorque */
+@font-face 
+{
+    font-family: 'Zorque';
+    src: url('./font/zorque.otf') format('opentype');
+}
+  
+  /* Définition de la police Calibri */
+@font-face 
+{
+    font-family: 'Calibri';
+    src: url('./font/calibri.ttf') format('truetype');
+}
+body
+{
+    background-image: url('./img_site/fond-wide-1200px.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;         
+}
+.maPage
+{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titre
+{
+    height: 175px;
+    width: 70%;
+    font-family: Zorque;
+    font-size: 60px;
+    float: left; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre img
+{
+   width: 170px; 
+} 
+.authentification
+{
+    height: 175px;
+    width: 30%;
+    float: left;   
+}
+
+.authBloc 
+{
+    background-color: #4494cb;
+    font-family: 'Calibri';
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.authBloc label 
+{
+    margin-right: 10px; 
+}
+.authBloc input
+{
+    margin-right: 10px; 
+}
+.bouttons
+{
+    float: right;
+}
+.contenu
+{
+    height: 500px;
+    width: 70%;
+    float: left;
+    font-family: Zorque; 
+}
+.bloc1
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+.bloc2
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-right: 150px;
+    margin-left: 150px;
+
+}
+/* Conteneur des images */
+.articles-container /*conteneur des articles */
+{
+    max-height: 500px; 
+    overflow-y:scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 4px;
+}
+.forme-container /*moustatil*/
+{
+    width: 44%;
+    height: 190px;
+    background: linear-gradient(#FFF, #d8d8d8);
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ajoutez un espace entre les lignes */
+    margin-right: 23px;
+}
+.forme-container img
+{
+    width: 110px;
+    height: 175px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.forme-container h1
+{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-family: 'Zorque';
+    font-size: 21px;
+
+}
+.forme-container h3
+{
+    margin-top:-10px;
+    color: #4494cb;
+    margin-left: 130px;
+    font-family: 'calibri'; 
+    font-size:15px ;
+}
+.forme-container p
+{
+    font-family: 'Zorque', sans-serif; 
+    color: #4494cb;
+    margin-left:130px ;
+
+}
+.forme-container button
+{
+    margin-top: -2px;
+    margin-left: 30px;
+}
+.panier
+{
+    height: 500px;
+    width: 30%;
+    float: left;
+    font-family: 'Calibri';  
+  
+
+}
+.panier img
+{
+    width: 60px;
+    float: left;
+}
+.panier-container
+{
+    background: linear-gradient(#FFF, #d8d8d8);
+    box-sizing: border-box;
+    border: 2px solid black; 
+    height: 130px;
+
+}
+.titrepanier
+{
+    border : 1.5px solid #d8d8d8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titrepanier h3
+{
+    color: #092435;
+    letter-spacing: 4px; 
+      
+}
+
+/*Ecran Smartphone*/
+@media screen and (max-width: 750px) 
+{
+    .titre
+    {
+        width: 100%;
+        font-size: 40px;
+    }
+    .titre img
+    {
+        width: 100px;
+    }
+    .authentification
+    {
+        width: 100%;
+    }
+    .authBloc
+    {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenu
+    {
+        width: 100%;
+    }
+    .panier
+    {
+        width: 100%;
+    }
+    .bloc1
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+        gap: 10px;
+
+
+    }
+    .bloc2
+    {
+        margin-right: 25px;
+        margin-left: 25px;
+
+    }
+    .cercle 
+    {
+        width: 25px;
+        height: 25px;      
+
+    }
+    .bloc1 .cercle 
+    {
+        width: 135px;
+        height: 130px;  
+
+    }
+    .bloc2 .cercle
+    {
+        width: 135px;
+        height: 130px;
+
+    }
+    .bloc1 .cercle img
+    {
+        width:105px;
+        height: 105px;
+    }
+    .bloc2 .cercle img
+    {
+        width:100px;
+        height: 100px;
+    }
+    
+}
+
+/*la barre de défilement*/
+::-webkit-scrollbar 
+{
+    width: 8px;
+} 
+::-webkit-scrollbar-thumb 
+{
+    background-color: #e9e6e6;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track 
+{
+    background-color: #000000;
+}
+
+.ligne-flex-center .cercle {
+    margin: 0 90px; /* Ajustez la marge entre les cercles selon vos besoins */
+    margin-top:10px;
+}
+/* Style pour le conteneur de la deuxième ligne */
+.ligne-flex-center {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+.cercle 
+{
+    width: 158px;
+    height: 155px;
+    background-color: #4494cb;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 10px; /* Espacement entre les cercles */
+    text-align: center;
+
+}
+.famille
+{
+    font-size: 20px;
+}
+
+.cercle h3 {
+    margin-top: 20px; /* Ajustez la distance du texte par rapport au bas du cercle */
+    width: 100%;
+    text-align: center;
+    font-family: Zorque;
+    font-size: 20px;
+}
+.cercle img
+{
+    width:123px;
+    height: 120px;
+    margin-top:15px;
+}
+a 
+{
+    color: inherit; /* La propriété "inherit" prend la couleur du texte de l'élément parent */
+    text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+}
