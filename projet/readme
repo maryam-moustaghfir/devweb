@@ -11,6 +11,8 @@
 
 -script pour modifier la taille des articles :
 
+@media screen and (max-width: 750px) 
+{
 .forme-container h1
     {
         margin-left: 120px;
