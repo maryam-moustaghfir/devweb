@@ -1,0 +1,9 @@
+-JEUX VIDÉOS
+
+-script pour l'apostrophe :
+ if (in_array(strtolower($data['libelle'][0]), ['h', 'a'])) {
+            echo '<h3>'.'Jeux d\'' . $data['libelle'].'</h3>';
+        } else {
+            echo '<h3>'.'Jeux de ' . $data['libelle'].'</h3>';
+        }
+-script pour modifier la taille des articles :
