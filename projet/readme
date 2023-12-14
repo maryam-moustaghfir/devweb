@@ -48,4 +48,26 @@
         margin-top: 5px;
 
     }
+--------------- panier dans smartphone
+.sous_panier
+{
+    background: linear-gradient(#FFF, #d8d8d8);
+    box-sizing: border-box;
+    border: 2px solid black; 
+    /*height: 130px;*/
+    min-height: 130px;
+    font-family: 'Calibri';
+    color: #092435; 
+    /*color: #4494cb;*/
+    /*position: relative;
+    padding-bottom: 60px;*/
+    width: 100%;
+}
+.monpanier {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
 
