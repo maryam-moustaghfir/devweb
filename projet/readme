@@ -1,4 +1,5 @@
--JEUX VIDÉOS
+-titre : JEUX VIDÉOS
+-style du détail pas en gras
 
 -script pour l'apostrophe :
  if (in_array(strtolower($data['libelle'][0]), ['h', 'a'])) {
@@ -6,4 +7,43 @@
         } else {
             echo '<h3>'.'Jeux de ' . $data['libelle'].'</h3>';
         }
+
+
 -script pour modifier la taille des articles :
+
+.forme-container h1
+    {
+        margin-left: 120px;
+        margin-top: 15px;
+        font-size: 19px;
+
+    }
+    .forme-container h3
+    {
+        margin-left: 120px;
+        font-size:12px ;
+        font-weight: normal;
+    }
+    .forme-container p
+    {
+        font-family: 'Zorque', sans-serif; 
+        color: #4494cb;
+        margin-left:120px ;
+
+    }
+    .forme-container /*moustatil*/
+    {
+        width: 85%;
+        height: 150px;
+        margin-left: 25px;
+    }
+
+    .forme-container img
+    {
+        width: 95px;
+        height: 137px;
+        float: left;
+        margin-top: 5px;
+
+    }
+
