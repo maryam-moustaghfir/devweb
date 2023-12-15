@@ -1,0 +1,514 @@
+/*---------------------------------------------{bouton}--------------------------------------------------------*/
+.bouton
+{
+background-color:#fff;
+height:34px;
+border-bottom:2px solid #092435;
+padding:3px 10px 3px 10px;
+margin:3px 10px 3px 10px;
+font-family:mist;
+font-weight:normal;
+font-size:26px;
+color:#092435;
+font-family: 'Tytoon Mist';
+}
+/* le bouton en cas de survol par la souris */
+.bouton:hover 
+{
+background-color:#092435;
+border-bottom:2px solid #fff;
+color:#fff;
+}
+
+/*---------------------------------------------{Fonts}--------------------------------------------------------*/
+/* Définition de la police Tytoon Mist */
+@font-face 
+{
+    font-family: 'Tytoon Mist';
+    src: url('./font/tytoon_mist.ttf') format('truetype');
+}
+  
+  /* Définition de la police Zorque */
+@font-face 
+{
+    font-family: 'Zorque';
+    src: url('./font/zorque.otf') format('opentype');
+}
+  
+  /* Définition de la police Calibri */
+@font-face 
+{
+    font-family: 'Calibri';
+    src: url('./font/calibri.ttf') format('truetype');
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* Style du corps */
+body
+{
+    background-image: url('./img_site/fond-wide-1200px.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;      
+    font-family: 'Calibri'; 
+    font-weight: normal;
+    height: 100%;
+    margin: 0;
+    padding: 0;  
+}
+/* Style de la page */
+.page
+{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+}
+/*---------------------------------------------{Titre}--------------------------------------------------------*/
+/* Style du bloc titre en Ecran large */
+.titre
+{
+    height: 175px;
+    width: 70%;
+    font-family: Zorque;
+    font-size: 60px;
+    float: left; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style du logo du titre */
+.titre img
+{
+   width: 170px; 
+} 
+/* Style de l'écriture */
+.titre h3
+{
+    color: #092435;
+    font-weight: normal;
+    
+}
+/*------------------------------------------{authentification}-------------------------------------------------*/
+/* Style du bloc authentification en Ecran large */
+.authentification
+{
+    height: 175px;
+    width: 30%;
+    float: left;   
+}
+/* Style du bloc bleu de l'authentification */
+.authBloc 
+{
+    background-color: #4494cb;
+    font-family: 'Calibri';
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+/* Style du formulaire d'authentification */
+.authBloc label 
+{
+    margin-right: 10px; 
+}
+.authBloc input
+{
+    margin-right: 10px; 
+}
+/* Style des boutons du formulaire (s'inscrire + connexion) */
+.bouttons
+{
+    float: right;
+}
+/*---------------------------------------------{Contenu}------------------------------------------------------*/
+/* Style du bloc contenu en Ecran large */
+.contenu
+{
+    height: 500px;
+    width: 70%;
+    float: left;
+    font-family: Zorque; 
+}
+/* Style du bloc Superieur du conteneur des familles  */
+.bloc1
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+/* Style du bloc Inférieur du conteneur des familles  */
+.bloc2
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+/* Style des cercles d'affichage des familles */
+.cercle 
+{
+    width: 158px;
+    height: 155px;
+    background-color: #4494cb;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 10px; /* Espacement entre les cercles */
+    text-align: center;
+}
+/* Style du titre des familles */
+.cercle h3 
+{
+    margin-top: 20px; /* Ajustez la distance du texte par rapport au bas du cercle */
+    width: 100%;
+    text-align: center;
+    font-family: Zorque;
+    font-size: 20px;
+    color: #092435;
+    font-weight: normal;
+}
+/* Style du logo des familles */
+.cercle img
+{
+    width:123px;
+    height: 120px;
+    margin-top:15px;
+}
+/* Style du conteneur des articles */
+.articles-container 
+{
+    max-height: 500px; 
+    overflow-y:scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 2px;
+}
+/* Style du conteneur d'un seul article */
+.forme-container 
+{
+    width: 44%;
+    height: 190px;
+    background: linear-gradient(#FFF, #d8d8d8);
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ajoutez un espace entre les lignes */
+    margin-right: 23px;
+}
+/* Style de l'image de 'larticle */
+.forme-container img
+{
+    width: 110px;
+    height: 175px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* Style du libelle de l'article */
+.forme-container h1
+{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-family: 'Zorque';
+    font-size: 21px;
+    font-weight: normal;
+}
+/* Style du détail de l'article */
+.forme-container h3
+{
+    margin-top:-10px;
+    color: #4494cb;
+    margin-left: 130px;
+    font-family: 'calibri'; 
+    font-size:15px ;
+    font-weight: normal;
+}
+/* Style du prix de l'article */
+.forme-container p
+{
+    font-family: 'Zorque', sans-serif; 
+    color: #4494cb;
+    margin-left:130px ;
+}
+/* Style du bouton commander l'article */
+.forme-container button
+{
+    margin-top: -2px;
+    margin-left: 30px;
+}
+/*---------------------------------------------{Panier}------------------------------------------------------*/
+/* Style du bloc panier en Ecran large */
+.panier
+{
+    height: 500px;
+    width: 30%;
+    float: left;
+    font-family: 'Calibri';
+}
+/* Style du bloc rectangulaire du panier */
+.minipanier
+{
+    background: linear-gradient(#FFF, #d8d8d8);
+    box-sizing: border-box;
+    border: 2px solid black; 
+    min-height: 130px;
+    font-family: 'Calibri';
+    color: #092435; 
+    width: 360px;
+}
+/* Style du bloc titre du panier */
+.panier_titre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style de l'image du titre dans le panier */
+.panier_titre img
+{
+    width: 50px;
+    float: left;
+    margin-right: 7px;
+}
+/* Style du mot 'votre panier' dans le bloc titre du panier */
+.panier_titre h3
+{
+    letter-spacing: 5px;
+}
+/* Style de l'affichage du libelle de l'article dans le panier */
+.libelle
+{
+    margin-left: 10px;
+}
+/* Style d'affichage du prix des articles et le prix total du panier */
+.droite
+{
+    text-align: right;
+    margin-right: 10px;
+}
+/*-----------------------------------------{Ecran Smartphone}-----------------------------------------------*/
+@media screen and (max-width: 750px) 
+{
+    /* Modification de la largeur des blocs*/
+    .titre,.authentification,.contenu,.panier,.minipanier
+    {
+        width: 100%; /
+    }
+
+    /*--------------------------{titre}----------------------------*/
+    /* Diminution de la taille d'écriture du titre */
+    .titre
+    {
+        font-size: 40px; 
+    }
+    /* Diminution de la taille du logo du site */
+    .titre img
+    {
+        width: 100px;
+    }
+    /*--------------------------{authentification}--------------------*/
+    /* Centrer le label et le input du bloc bleu */
+    .authBloc
+    {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /*---------------------------{contenu}-----------------------------*/
+    /* Ajustement de la marge du bloc superieur du contenu */
+    .bloc1
+    {
+        margin-left: 5px;    
+    }
+    /* Ajustement de la marge du bloc inferieur du contenu */
+    .bloc2
+    {
+        margin-left: 72px;
+    }
+
+    /* Ajustement de la taille des cercles du bloc superieur du contenu */
+    .bloc1 .cercle 
+    {
+        width: 135px;
+        height: 130px;  
+    }
+    /* Ajustement de la taille des cercles du bloc inferieur du contenu */
+    .bloc2 .cercle
+    {
+        width: 135px;
+        height: 130px;
+    }
+    /* Ajustement de la taille des images des familles du bloc superieur et inferieur du contenu */
+    .bloc1 .cercle img
+    {
+        width:105px;
+        height: 105px;
+    }
+    .bloc2 .cercle img
+    {
+        width:100px;
+        height: 100px;
+    }
+    /* Ajustement de la taille et la marge du libelle de l'article  */
+    .forme-container h1
+    {
+        margin-left: 120px;
+        margin-top: 15px;
+        font-size: 19px;
+    }
+    /* Ajustement de la taille et la marge du détail de l'article */
+    .forme-container h3
+    {
+        margin-left: 120px;
+        font-size:12px ;
+    }
+    /* Ajustement de la marge du détail de l'article */
+    .forme-container p
+    {
+        margin-left:120px ;
+    }
+    /* Ajustement de la taille et la marge du détail de l'article */
+    .forme-container 
+    {
+        width: 85%;
+        height: 150px;
+        margin-left: 25px;
+    }
+    /* Ajustement du style du conteneur d'un seul article */
+    .forme-container img
+    {
+        width: 95px;
+        height: 137px;
+        float: left;
+        margin-top: 5px;
+    }
+    
+    /*-------------------------------{panier}-------------------------------*/
+    /* Ajustement de l'emplacement du panier */
+    .panier
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+/*-----------------------------------------{Ecran Intermediaire}-----------------------------------------------*/
+@media screen and (min-width:751px) and (max-width: 1200px)
+{
+      
+    /*--------{contenu}--------*/
+    /* Ajustement des marges des blocs sup et inf */
+    .bloc1
+    {
+        margin-left: 25px;
+    }
+    .bloc2
+    {
+        margin-left: 110px;
+    }
+    /* Ajustement des tailles des cercles des blocs sup et inf */
+    .bloc1 .cercle 
+    {
+        width: 145px;
+        height: 140px;  
+    }
+    .bloc2 .cercle
+    {
+        width: 145px;
+        height: 140px;
+    }
+    /* Ajustement des tailles des images des familles des blocs sup et inf */
+    .bloc1 .cercle img
+    {
+        width:112px;
+        height: 112px;
+    }
+    .bloc2 .cercle img
+    {
+        width:107px;
+        height: 107px;
+    }
+    /* Ajustement de la taille et la marge du libelle de l'article  */
+    .forme-container h1
+    {
+        margin-left: 120px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    /* Ajustement de la taille et la marge du detail de l'article  */
+    .forme-container h3
+    {
+        margin-left: 120px;
+        font-size:12px ;
+    }
+    /* Ajustement de la marge du libelle de l'article  */
+    .forme-container p
+    {
+        margin-left:120px ;
+    }
+    /* Ajustement de la taille et de la marge du conteneur d'un article */
+    .forme-container 
+    {
+        width: 46%;
+        height: 170px;
+        margin-bottom: 20px; /* Ajoutez un espace entre les lignes */
+        margin-right: 20px;
+    }
+    /* Ajustement  de la marge et la taille des images d'articles */
+    .forme-container img
+    {
+        width: 85px;
+        height: 127px;
+        margin-top: 5px;
+    }
+    /* Ajustement de la taille du bouton commander */
+    .bouton
+    {
+        font-size: 20px;
+    }
+    /* Ajustement de la taille et la marge du bloc minipanier */
+    .minipanier
+    {      
+        width: auto; /* Ajustement automatique de la largeur */
+        margin-top: 17px;
+    }
+    /* Ajustement de la taille de l'image du titre dans le panier  */
+    .panier_titre img
+    {
+        width: 45px;   
+    }   
+}
+
+/*----------------------------------{la barre de défilement}-------------------------------------------*/
+/* Définition de la largeur de la barre de défilement */
+::-webkit-scrollbar 
+{
+    width: 8px;
+} 
+/* Style pour la poignée de défilement */
+::-webkit-scrollbar-thumb 
+{
+    background-color: #e9e6e6; /* Couleur de fond de la poignée de défilement */
+    border-radius: 6px; /* Bordure arrondie à la poignée */
+}
+/* Style pour la piste de défilement  */
+::-webkit-scrollbar-track 
+{
+    background-color: #000000;/* Couleur de fond de la piste de défilement */
+}
+
+/*----------------------------------{lien hypertexte}-------------------------------------------------*/
+/* Style des liens hypertextes */
+a 
+{
+    color: inherit; /* Prise de la couleur du texte de l'élément parent */
+    text-decoration: none; /* Suppression du soulignement par défaut des liens */
+}
